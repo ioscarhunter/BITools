@@ -1,0 +1,189 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2b4b14b3-5445-444f-8692-1d676333efa2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Tutor DW</ID>
+  <Name>Tutor DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="6cab88d7-4ea2-4b5f-b1b5-3f2e71f15d1f">
+      <ID>Dim Time</ID>
+      <Name>Dim Time</Name>
+      <DimensionID>Dim Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ffa5171f-4c3e-4835-b182-fffd27ff48f8">
+          <AttributeID>TIME SCHEDULE ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0f15b61a-28a8-4bbc-a39a-d3b163e75c1a">
+          <AttributeID>TIME PERIOD</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6b59c51b-79e2-431f-b254-8c42504a600b">
+      <ID>Dim Reg Course</ID>
+      <Name>Dim Reg Course</Name>
+      <DimensionID>Dim Reg Course</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e7638418-24ea-4131-92ee-7bef07fbeff3">
+          <AttributeID>COURSE SCHEDULE ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ede78302-140b-42cc-893f-a72846e52792">
+          <AttributeID>REG COURSE ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a2fc858a-21e5-424c-8659-3ce40e7b0dc3">
+          <AttributeID>SCHOOL ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="84b6dc55-c443-418b-ab06-6c129e622d72">
+          <AttributeID>SCHOOL NAME</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="236ff9f2-4b3f-4668-b934-fb277fcaf80f">
+      <ID>Dim Open Course Each Branch</ID>
+      <Name>Dim Open Course Each Branch</Name>
+      <DimensionID>Dim Open Course Each Branch</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="17e23b53-2398-4156-8863-0e3f2d5fa4d5">
+          <AttributeID>OPEN COURSE EACH BRANCH ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="73bf0593-3ed8-4223-afc8-2e3f1f1c522d">
+          <AttributeID>OPEN COURSE ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b0f4fbae-eb42-46a0-8afd-4949e1bbb0be">
+          <AttributeID>SEMISTER</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="58c7d739-f7d3-40a7-9022-48a85656bbc9">
+          <AttributeID>BRANCH ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b3a68997-75a5-4522-89ce-be5408a4b362">
+          <AttributeID>BRANCH NAME</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="68725487-2656-4eed-97d6-b0fe7e344512">
+      <ID>Fact Course Schedule</ID>
+      <Name>Fact Course Schedule</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="640f4f7a-b3c8-4b49-8a8d-d0aa17db8f8d">
+          <ID>CURRENT STUDENT</ID>
+          <Name>CURRENT STUDENT</Name>
+          <Source dwd:design-time-name="c2c061bc-d429-4b31-85b0-1631486fd83c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c9c420f4-c2e9-4123-add9-9ee0471d80a4">
+              <TableID>FactCourseSchedule</TableID>
+              <ColumnID>CURRENT_STUDENT</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cefe7b05-8e28-4fb0-821d-65a879533052">
+          <CubeDimensionID>Dim Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="96ddbcbb-bc7a-4ed6-ab09-26178e475aa9">
+              <AttributeID>TIME SCHEDULE ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c31e8772-121a-45d8-ad7a-dc710259c73c">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="91023994-1210-4414-99a6-6639d24c792b">
+                    <TableID>FactCourseSchedule</TableID>
+                    <ColumnID>TIME_SCHEDULE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f2b9e608-5ea6-4978-a5fc-71a36c76b3f1">
+          <CubeDimensionID>Dim Reg Course</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7d8e57aa-bd6b-4d38-8441-98024f4462c4">
+              <AttributeID>COURSE SCHEDULE ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0b52dbce-5ae0-4387-8156-0ccae9adb192">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f0d56b9b-d68b-4d98-8a19-96929e042dc1">
+                    <TableID>FactCourseSchedule</TableID>
+                    <ColumnID>COURSE_SCHEDULE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c8b2df9f-d101-42d2-aa04-eccf04bd9b44">
+          <CubeDimensionID>Dim Open Course Each Branch</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="368259b2-ad0c-4025-af87-fabb538a2356">
+              <AttributeID>OPEN COURSE EACH BRANCH ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7e17803f-88f5-4103-bec8-5c7f36fe11f4">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e7b5e026-19e7-4168-ae83-5d3b9f352ff2">
+                    <TableID>FactCourseSchedule</TableID>
+                    <ColumnID>OPEN_COURSE_EACH_BRANCH_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="b0f06001-58ef-4bfd-95e8-64fb2e4dec85">
+    <DataSourceViewID>Tutor DW</DataSourceViewID>
+  </Source>
+</Cube>

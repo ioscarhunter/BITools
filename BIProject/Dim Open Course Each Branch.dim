@@ -1,0 +1,163 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e675cf77-7ab8-4fa3-ba55-10817cf92ba8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Open Course Each Branch</ID>
+  <Name>Dim Open Course Each Branch</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="791ca7e3-8bdd-4395-85cb-e2f2ad76c7d5">
+    <DataSourceViewID>Tutor DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="677c2009-a24f-4f3c-8533-dbf23d228ea0">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="93f27f40-dc72-4024-a18c-b3a97e2caaf4">
+      <ID>OPEN COURSE EACH BRANCH ID</ID>
+      <Name>OPEN COURSE EACH BRANCH ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2cd96e26-712b-49b2-be8d-99c2117b1e81">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c515652d-dfa1-470f-8877-e3f7d39527c6">
+            <TableID>DimOpenCourseEachBranch</TableID>
+            <ColumnID>OPEN_COURSE_EACH_BRANCH_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9ac8a5e5-461e-4689-b877-1b51d54c66fc">
+          <AttributeID>OPEN COURSE ID</AttributeID>
+          <Name>OPEN COURSE ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="397cd3e3-e0f9-488b-ac10-2dfd41ea534c">
+          <AttributeID>SEMISTER</AttributeID>
+          <Name>SEMISTER</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5aef3077-edef-479e-982e-3c98af4bc18d">
+          <AttributeID>BRANCH ID</AttributeID>
+          <Name>BRANCH ID</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6e9d3c02-d678-40fc-b629-6861d558bbb8">
+      <ID>OPEN COURSE ID</ID>
+      <Name>OPEN COURSE ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7c53d199-6525-4ae8-b922-7575e48124c9">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f0d700f3-ca61-4c61-b23f-6cbb2e3076c2">
+            <TableID>DimOpenCourseEachBranch</TableID>
+            <ColumnID>OPEN_COURSE_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="efe165bb-e146-43de-8b4c-55de7501623c">
+      <ID>SEMISTER</ID>
+      <Name>SEMISTER</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b90338f6-0645-4f12-8f9e-97c139856a6d">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d1a754e-f590-4ca0-9014-b8d924c003c3">
+            <TableID>DimOpenCourseEachBranch</TableID>
+            <ColumnID>SEMISTER</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ba8abbbf-8b56-44a8-96a6-bd2ed1fc67e2">
+      <ID>BRANCH ID</ID>
+      <Name>BRANCH ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="26f935dd-8a15-4141-afcf-2b66ac852ab0">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="51c34cbc-5a92-4803-8b9d-848590f6a553">
+            <TableID>DimBranch</TableID>
+            <ColumnID>BRANCH_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="329840b7-d4ea-4c18-ae89-3edfd212ff1c">
+          <AttributeID>BRANCH NAME</AttributeID>
+          <Name>BRANCH NAME</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="101717da-3d66-46b2-a8f9-403fce39c570">
+      <ID>BRANCH NAME</ID>
+      <Name>BRANCH NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="662509f6-1048-4aa7-9fc6-2c5909f33eb5">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f23afeb2-fb55-440e-9882-1d03f19acac6">
+            <TableID>DimBranch</TableID>
+            <ColumnID>BRANCH_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
